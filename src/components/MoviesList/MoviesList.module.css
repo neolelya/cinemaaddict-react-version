@@ -1,0 +1,23 @@
+.visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.list {
+  flex-basis: 100%;
+  flex-shrink: 0;
+  padding-bottom: 60px;
+}
+
+.container {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--vertical-gap);
+}

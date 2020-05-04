@@ -1,0 +1,117 @@
+.visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.middle {
+  background-color: #121213;
+  padding: 0 10px;
+}
+.wrap {
+  width: 1070px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.inner {
+  background-color: #212126;
+}
+.controls {
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+.reset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #9da4aa;
+  outline: none;
+}
+.reset:hover {
+  color: #ffffff;
+}
+.img {
+  width: 230px;
+  height: 330px;
+  object-fit: contain;
+}
+.poster {
+  margin-right: 60px;
+}
+.title {
+  margin: 0;
+  margin-bottom: 2px;
+  margin-top: 25px;
+  font-size: 60px;
+}
+.feelings {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffe800;
+}
+.userScore {
+  display: flex;
+}
+.score {
+  display: flex;
+  position: relative;
+  padding-top: 50px;
+  width: 546px;
+}
+.score::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/emotions/puke.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.score::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/emotions/trophy.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.label {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d8d8;
+  border-radius: 50%;
+  color: #010101;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.label:not(:last-child) {
+  margin-right: 12px;
+}
+.label:hover {
+  opacity: 0.7;
+}
+.input:checked + .label {
+  background-color: #ffe800;
+}

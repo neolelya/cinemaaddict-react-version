@@ -1,0 +1,29 @@
+.sort {
+  display: flex;
+
+  padding-left: 0;
+  list-style: none;
+}
+
+.button {
+  display: block;
+  margin-right: 32px;
+  padding: 0;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
+
+.active {
+  color: #ffe800;
+}

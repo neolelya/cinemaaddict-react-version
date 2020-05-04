@@ -1,0 +1,148 @@
+.card {
+  flex-basis: 230px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: 10px;
+  padding-top: calc(340px + 50px + 10px);
+  position: relative;
+}
+
+.title,
+.rating {
+  display: inline;
+  font-weight: 700;
+}
+
+.title {
+  margin-right: 0.5em;
+}
+
+.rating,
+.good {
+  color: var(--text-color-good);
+}
+
+.average {
+  color: var(--text-color-average);
+}
+
+.poor {
+  color: var(--text-color-poor);
+}
+
+.span {
+  margin-right: 10px;
+}
+
+.poster {
+  border: dotted 1px rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  bottom: calc(100% - 340px - 50px);
+  height: 340px;
+  overflow: hidden;
+  position: absolute;
+  transition: bottom 0.2s ease-out;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover .poster {
+  bottom: calc(100% - 340px);
+}
+
+.card:hover .controls {
+  height: 50px;
+}
+
+.description {
+  font-size: var(--font-size-smaller);
+  padding-right: 30px;
+}
+
+.comments {
+  background: none;
+  border: 0;
+  color: #687fad;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: var(--font-size);
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+.comments:hover {
+  opacity: 0.7;
+}
+
+.controls {
+  align-items: flex-end;
+  bottom: calc(100% - 340px - 50px);
+  display: flex;
+  height: 0;
+  justify-content: space-between;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 0;
+  position: absolute;
+  transition: height 0.1s ease-in;
+  width: 100%;
+}
+
+.controlsItem {
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-right: solid 1px var(--outline-color);
+  box-sizing: border-box;
+  flex-basis: 33%;
+  height: 30px;
+  opacity: 1;
+  text-indent: -900em;
+  transition: opacity 0.1s ease-in;
+  cursor: pointer;
+}
+
+.controlsItem:last-of-type {
+  border-right: 0;
+}
+
+.controlsItem:not(.active):hover {
+  opacity: 0.7;
+}
+
+.watchlist {
+  background-image: url('../../images/icons/icon-watchlist.svg');
+  background-size: 17px 15px;
+}
+
+.history {
+  background-image: url('../../images/icons/icon-watched.svg');
+  background-size: 14px 10px;
+}
+
+.favorite {
+  background-image: url('../../images/icons/icon-favorite.svg');
+  background-size: 18px 18px;
+}
+
+.active.watchlist {
+  background-image: url('../../images/icons/icon-watchlist-active.svg')
+}
+
+.active.history {
+  background-image: url('../../images/icons/icon-watched-active.svg')
+}
+
+.active.favorite {
+  background-image: url('../../images/icons/icon-favorite-active.svg')
+}
+
+.card .poster:hover,
+.card .title:hover,
+.card .poster:focus,
+.card .title:focus {
+  cursor: pointer;
+}

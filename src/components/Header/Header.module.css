@@ -1,0 +1,28 @@
+.header {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.logo {
+  margin-right: 68px;
+  flex-basis: 165px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.rating {
+  font-size: 20px;
+}
+
+.avatar {
+  display: block;
+  margin-left: 15px;
+}

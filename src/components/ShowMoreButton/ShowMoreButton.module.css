@@ -1,0 +1,17 @@
+.button {
+  background: none;
+  border: solid 1px var(--outline-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: var(--font);
+  font-size: var(--font-size-smaller);
+  height: 60px;
+  opacity: 1;
+  transition: opacity 0.1s ease-in;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.7;
+}

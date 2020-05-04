@@ -1,0 +1,30 @@
+.visuallyHidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.bottom {
+  width: 1070px;
+  margin: 0 auto;
+  padding: 40px 10px 64px;
+}
+.wrap {
+  width: 630px;
+  color: #f6f6f6;
+}
+.title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 30px;
+}

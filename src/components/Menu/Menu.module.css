@@ -1,0 +1,30 @@
+.navigation {
+  border-bottom: solid 2px var(--outline-color);
+  display: flex;
+  flex-basis: 100%;
+  font-size: var(--font-size-bigger);
+  font-weight: 800;
+}
+
+.item {
+  color: var(--text-color);
+  margin-right: 40px;
+  padding: var(--vertical-gap) 0;
+}
+
+.count {
+  background:rgba(0,46,255, 0.4);
+  border-radius: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  width: 1em;
+}
+
+.active {
+  color: var(--text-color-active);
+}
+
+.additional {
+  margin-left: auto;
+  margin-right: 0;
+}
