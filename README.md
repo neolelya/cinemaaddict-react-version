@@ -18,6 +18,6 @@ It's a service for fans of big movies. Detailed information about the latest hot
 
 
 ### Site navigation 
-* Main page - https://neolelya.github.io/cinemaddict/
+* Main page - https://neolelya.github.io/cinemaaddict-react-version/
 * Statistics page
 
