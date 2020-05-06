@@ -151,8 +151,8 @@ function App() {
       <Footer />
       {movies.length > 0 && isPopupOpened && (
         <Popup
-          movie={movies[openedMovie]}
-          onPopupClose={isPopupOpened => setPopupMode(false)}
+          movie={movies.find(({id}) => id === openedMovie)}
+          onPopupClose={() => setPopupMode(false)}
           onMovieChange={handleMovieChange}
           comments={comments}
           onDeleteCommentClick={handleCommentDelete}
