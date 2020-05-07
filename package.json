@@ -1,5 +1,6 @@
 {
   "name": "react-cinema-addict",
+  "homepage": "https://neolelya.github.io/cinemaaddict-react-version",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
